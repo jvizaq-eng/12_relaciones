@@ -66,18 +66,30 @@ Reloj :: Reloj(){
 	pHora = NULL;
 }
 
-void Reloj :: mostrarReloj(){
+//void Reloj :: mostrarReloj(){
 	if (pDisplay == NULL){
 		cout << 
-	} else { "La hora es [" << hora << ":" << minutos << ":" << segundos << "]." << endl;
+	} else { 
 		cout << 
+	}
+}
+//void Reloj :: mostrarReloj(){
+	if (pHora == NULL){
+		cout << 
+	} else { 
+		cout << "La hora es [" << hora << ":" << minutos << ":" << segundos << "]." << endl;
+		//pHora -> mostrarReloj();
 	}
 }
 
 void Reloj :: asignarDisplay(Display *pR){
 	pDisplay = pR;
 }
+
 int main(){
-	
+	Display d();
+	Hora q("10", "15", "55");
+	Reloj reloj1();
+	reloj1.
 	
 }
